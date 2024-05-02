@@ -1,0 +1,1 @@
+web: gunicorn TurfBooking.wsgi  --log-file -

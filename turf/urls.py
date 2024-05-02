@@ -1,0 +1,42 @@
+from django.urls import path, include
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+    path("book_now", views.book_now, name="book_now"),
+    path("turf_details_d1", views.turf_details_d1, name="turf_details_d1"),
+    path("turf_details_d2", views.turf_details_d2, name="turf_details_d2"),
+    path("turf_details_d3", views.turf_details_d3, name="turf_details_d3"),
+    path("turf_details_i1", views.turf_details_i1, name="turf_details_i1"),
+    path("turf_details_i2", views.turf_details_i2, name="turf_details_i2"),
+    path("turf_details_i3", views.turf_details_i3, name="turf_details_i3"),
+    path("turf_details_i4", views.turf_details_i4, name="turf_details_i4"),
+    path("turf_details_i5", views.turf_details_i5, name="turf_details_i5"),
+    path("turf_details_i6", views.turf_details_i6, name="turf_details_i6"),
+    path("turf_details_i7", views.turf_details_i7, name="turf_details_i7"),
+    path("turf_details_u1", views.turf_details_u1, name="turf_details_u1"),
+    path("turf_details_u2", views.turf_details_u2, name="turf_details_u2"),
+    path("turf_details_u3", views.turf_details_u3, name="turf_details_u3"),
+    path("turf_details_u4", views.turf_details_u4, name="turf_details_u4"),
+    path("turf_details_b1", views.turf_details_b1, name="turf_details_b1"),
+    path("turf_details_b2", views.turf_details_b2, name="turf_details_b2"),
+    path("turf_details_b3", views.turf_details_b3, name="turf_details_b3"),
+    path("turf_details_b4", views.turf_details_b4, name="turf_details_b4"),
+    path("turf_details_b5", views.turf_details_b5, name="turf_details_b5"),
+    path("slot_details", views.slot_details, name="slot_details"),
+    
+    path("login", views.login, name="login"),
+    path("signup", views.signup, name="signup"),
+    path("logout", views.logout, name="logout"),
+    path("contactus", views.contactus, name="contactus"),
+    path("aboutus", views.aboutus, name="aboutus"),
+    path('turfBilling', views.turfBilling, name='turfBilling'),
+    path('orderHistory', views.orderHistory, name="orderHistory"),
+    path('allBookings', views.allBookings, name="allBookings"),
+    path('delete_booking/<int:id>', views.delete_booking, name="delete_booking"),
+    path('success', views.success, name='success'),
+    path('turf_dewas', views.turf_dewas, name='turf_dewas'),
+    path('turf_indore', views.turf_indore, name='turf_indore'),
+    path('turf_ujjain', views.turf_ujjain, name='turf_ujjain'),
+    path('turf_bhopal', views.turf_bhopal, name='turf_bhopal')
+]
